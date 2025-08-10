@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // --- ENHANCED TESTIMONIALS LOADING ---
     const testimonialsGrid = document.getElementById('testimonials-grid');
     // Using a placeholder API endpoint, replace with your actual API if needed
-    const TESTIMONIALS_API_URL = 'http://SanehaAkhtar.pythonanywhere.com/api/testimonials/'; // 
+    const TESTIMONIALS_API_URL = '//sanehaakhtar.pythonanywhere.com/api/testimonials/'; // 
 
     async function fetchTestimonials() {
         if (!testimonialsGrid) return;

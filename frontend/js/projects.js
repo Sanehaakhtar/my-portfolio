@@ -2,7 +2,8 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     const projectsGrid = document.getElementById('projects-grid');
-    const API_URL = 'http://SanehaAkhtar.pythonanywhere.com/api/projects/?project_type=CS'
+    const API_URL = '//sanehaakhtar.pythonanywhere.com/api/projects/?project_type=CS';
+
     let projectsData = [];
 
     // Initialize ScrollReveal

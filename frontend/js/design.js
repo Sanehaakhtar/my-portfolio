@@ -3,7 +3,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const designGrid = document.getElementById('design-grid');
     const filterTabs = document.querySelectorAll('.filter-tab');
-   const API_URL = 'http://SanehaAkhtar.pythonanywhere.com/api/projects/?project_type=DS';
+   const API_URL = '//sanehaakhtar.pythonanywhere.com/api/projects/?project_type=DS';
     let projectsData = [];
     let currentFilter = 'all';
 

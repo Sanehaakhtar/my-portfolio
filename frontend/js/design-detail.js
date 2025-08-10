@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // Construct the correct API URL for the specific project
-        const API_URL = 'http://SanehaAkhtar.pythonanywhere.com/api/projects/${designId}/\`;'
+        const API_URL = `//sanehaakhtar.pythonanywhere.com/api/projects/${designId}/`;
         
         showLoadingState(); // Show the "Loading..." message
 
