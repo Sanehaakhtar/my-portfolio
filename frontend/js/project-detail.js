@@ -6,7 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const projectId = urlParams.get('id');
 
     // API endpoint for fetching project details
-    const API_URL = `http://127.0.0.1:8000/api/projects/${projectId}/`;
+    const API_URL = `//sanehaakhtar.pythonanywhere.com/api/projects/${projectId}/`;
+        
 
     // Initialize ScrollReveal
     if (typeof ScrollReveal !== 'undefined') {
