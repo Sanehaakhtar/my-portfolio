@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saneha Akhtar | Augmented Reality Portfolio</title>
+
+    <!-- Google Fonts for beautiful typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Fira+Code:wght@300;400;500&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Our CSS Files -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body class="index-mode">
+    <!-- Animated background elements (defined in main.css) -->
+    <div class="particles-container">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- The Navbar will be loaded here by JavaScript -->
+    <header id="navbar-container"></header>
+    <!-- IMPORTANT: Please update the logo/name in components/navbar.html to "Saneha Akhtar" or your desired text. -->
+
+    <main>
+        <!-- Hero Section - Digital Interface -->
+        <section id="hero">
+            <div class="hero-background">
+                <div class="gradient-orb orb-1"></div>
+                <div class="gradient-orb orb-2"></div>
+                <div class="gradient-orb orb-3"></div>
+            </div>
+            
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">Hello, I'm</span>
+                        <span class="name-highlight" data-text="Saneha Akhtar">Saneha Akhtar</span>
+                    </h1>
+                    
+                    <h2 class="hero-subtitle">
+                        I'm a <span id="typing-animation" class="typing-text"></span>
+                    </h2>
+                    
+                    <p class="hero-description">
+                        A **creative technologist** who engineers beautiful, functional digital experiences from concept to deployment. I thrive at the intersection of logical code and intuitive design.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <button id="view-tech-work-btn" class="btn-primary">
+                            <i class="fas fa-code-branch"></i>
+                            See My Tech Projects
+                        </button>
+                        <button id="view-design-work-btn" class="btn-secondary">
+                            <i class="fas fa-vector-square"></i>
+                            See My Design Projects
+                        </button>
+                        <button id="download-cv-btn" class="btn-secondary">
+                            <i class="fas fa-file-download"></i>
+                            Download CV
+                        </button>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/Sanehaakhtar" class="social-link" data-tooltip="GitHub" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/saneha-akhtar-95540b30b/" class="social-link" data-tooltip="LinkedIn" target="_blank" rel="noopener">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:sakhtar.bscs24seecs@seecs.edu.pk" class="social-link" data-tooltip="Email">
+                            <i class="fas fa-at"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="image-container">
+                        <div class="image-glow"></div>
+                        <img src="assets/pfp_resize.jpg" alt="Saneha Akhtar - Creative Technologist">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Scroll indicator -->
+            <div class="scroll-indicator">
+                <div class="scroll-text">Explore My Interface</div>
+                <div class="scroll-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section - Data Streams -->
+        <section id="testimonials-section" class="testimonials-container">
+            <div class="section-header">
+                <h2 class="section-title" data-text="Client Data Streams">What My Collaborators Say</h2>
+                <p class="section-subtitle">Insights from those who've experienced my digital creations.</p>
+            </div>
+            
+            <div id="testimonials-grid" class="testimonials-grid">
+                <!-- Loading animation -->
+                <div class="testimonials-loading">
+                    <div class="loading-spinner"></div>
+                    <p class="loading-text">Accessing Data Streams...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- JS Libraries -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+    <!-- Our JS Files -->
+    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
+    
+    <footer id="footer-container"></footer>
+</body>
+</html>

@@ -1,0 +1,310 @@
+/* frontend/css/design-detail.css - REFACTORED */
+
+.design-detail-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem 5% 6rem 5%; /* More padding at bottom */
+    color: white;
+}
+
+/* Back Button (already good) */
+.back-navigation { margin-bottom: 2rem; }
+.back-btn {
+    /* Your existing back-btn styles are fine */
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+.back-btn:hover { background: rgba(255, 255, 255, 0.2); transform: translateX(-5px); }
+
+/* Main Container for the page */
+.design-detail-container {
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 2rem 1rem 6rem 1rem;
+    color: white;
+}
+
+/* Back Button styling */
+.back-navigation {
+    margin-bottom: 2rem;
+    animation: fadeInUp 0.8s ease-out;
+}
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+.back-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(-5px);
+}
+
+/* Header for Title and Category */
+.detail-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.artwork-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.artwork-meta .meta-tag {
+    display: inline-block;
+    background: rgba(99, 102, 241, 0.2);
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #a5b4fc;
+    text-transform: uppercase;
+}
+
+/* --- THE HORIZONTAL SCROLLING GALLERY --- */
+.artwork-gallery-wrapper {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 2rem;
+    padding: 1rem;
+    margin-bottom: 3rem;
+    /* Custom scrollbar for a cleaner look */
+    scrollbar-width: thin;
+    scrollbar-color: #6366f1 rgba(0,0,0,0.2);
+}
+.artwork-gallery-wrapper::-webkit-scrollbar { height: 8px; }
+.artwork-gallery-wrapper::-webkit-scrollbar-track { background: rgba(0,0,0,0.2); border-radius: 10px; }
+.artwork-gallery-wrapper::-webkit-scrollbar-thumb { background-color: #6366f1; border-radius: 10px; }
+
+
+/* --- CONTAINER FOR EACH IMAGE (FOR CENTERING) --- */
+.gallery-image-container {
+    flex: 0 0 85%; /* Each slide takes up 85% of the gallery's width */
+    height: 80vh; /* Each slide has a fixed height */
+    scroll-snap-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.15);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+/* --- THE ACTUAL IMAGE (FOR FULL DISPLAY) --- */
+.gallery-image {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain; /* Shows the FULL image without stretching */
+    border-radius: 8px;
+}
+
+/* --- BACK TO STUDIO LINK --- */
+.detail-links { text-align: center; }
+.detail-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+.detail-link:hover { background: rgba(255, 255, 255, 0.2); transform: translateY(-3px); }
+
+/* --- ANIMATIONS & LOADING STATES --- */
+.design-content { animation: slideInUp 0.8s ease-out 0.2s both; }
+.detail-loading, .detail-error {
+    /* Your loading/error styles are good, but this ensures they're centered */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+}
+.loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    border-top: 3px solid #6366f1;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+}
+.loading-text, .detail-error p { color: white; font-size: 1rem; }
+.detail-error h3 { font-size: 1.5rem; }
+
+@keyframes slideInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}/* Main Container for the page */
+.design-detail-container {
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 2rem 1rem 6rem 1rem;
+    color: white;
+}
+
+/* Back Button styling */
+.back-navigation {
+    margin-bottom: 2rem;
+    animation: fadeInUp 0.8s ease-out;
+}
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+.back-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(-5px);
+}
+
+/* Header for Title and Category */
+.detail-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.artwork-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.artwork-meta .meta-tag {
+    display: inline-block;
+    background: rgba(99, 102, 241, 0.2);
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #a5b4fc;
+    text-transform: uppercase;
+}
+
+/* --- THE HORIZONTAL SCROLLING GALLERY --- */
+.artwork-gallery-wrapper {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 2rem;
+    padding: 1rem;
+    margin-bottom: 3rem;
+    /* Custom scrollbar for a cleaner look */
+    scrollbar-width: thin;
+    scrollbar-color: #6366f1 rgba(0,0,0,0.2);
+}
+.artwork-gallery-wrapper::-webkit-scrollbar { height: 8px; }
+.artwork-gallery-wrapper::-webkit-scrollbar-track { background: rgba(0,0,0,0.2); border-radius: 10px; }
+.artwork-gallery-wrapper::-webkit-scrollbar-thumb { background-color: #6366f1; border-radius: 10px; }
+
+
+/* --- CONTAINER FOR EACH IMAGE (FOR CENTERING) --- */
+.gallery-image-container {
+    flex: 0 0 85%; /* Each slide takes up 85% of the gallery's width */
+    height: 80vh; /* Each slide has a fixed height */
+    scroll-snap-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.15);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+/* --- THE ACTUAL IMAGE (FOR FULL DISPLAY) --- */
+.gallery-image {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain; /* Shows the FULL image without stretching */
+    border-radius: 8px;
+}
+
+/* --- BACK TO STUDIO LINK --- */
+.detail-links { text-align: center; }
+.detail-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+.detail-link:hover { background: rgba(255, 255, 255, 0.2); transform: translateY(-3px); }
+
+/* --- ANIMATIONS & LOADING STATES --- */
+.design-content { animation: slideInUp 0.8s ease-out 0.2s both; }
+.detail-loading, .detail-error {
+    /* Your loading/error styles are good, but this ensures they're centered */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+}
+.loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    border-top: 3px solid #6366f1;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+}
+.loading-text, .detail-error p { color: white; font-size: 1rem; }
+.detail-error h3 { font-size: 1.5rem; }
+
+@keyframes slideInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

@@ -1,0 +1,27 @@
+/* frontend/css/main.css */
+
+/* --- Footer Styles --- */
+#footer-container {
+    padding: 2rem 5%;
+    margin-top: 4rem; /* Give some space above the footer */
+    text-align: center;
+}
+
+body.design-mode #footer-container {
+    border-top: 1px solid #eee;
+}
+body.tech-mode #footer-container {
+    border-top: 1px solid #333;
+}
+
+.footer-socials {
+    margin-top: 1rem;
+}
+
+.footer-socials a {
+    margin: 0 0.75rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+body.design-mode .footer-socials a { color: var(--text-design); }
+body.tech-mode .footer-socials a { color: var(--text-tech); }
