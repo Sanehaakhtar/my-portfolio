@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
-    
     // --- 1. NAVBAR LOADER ---
-    loadComponent('navbar-container', 'components/navbar.html', () => {
-        // No mode toggle to initialize anymore
-        setActiveNavLink();
-    });
+    fetch('components/navbar.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('navbar-container').innerHTML = html;
+        });
 
     // --- 2. FOOTER LOADER ---
     loadComponent('footer-container', 'components/footer.html');

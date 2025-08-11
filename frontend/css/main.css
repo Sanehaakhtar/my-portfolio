@@ -14,7 +14,7 @@
     /* Spacing */
     --space-xs: 0.5rem;
     --space-sm: 1rem;
-    --space-md: 0.5rem;
+    --space-md: 0.8rem;
     --space-lg: 2rem;
     --space-xl: 3rem;
     --space-xxl: 4rem;
@@ -43,7 +43,7 @@ html {
 
 body {
     font-family: var(--font-body);
-    background-color: var(--bg-dark);
+    background-color:#1f0159e8;
     color: var(--text-light);
     line-height: 1.6;
     overflow-x: hidden; /* Prevent horizontal scroll from animations */
@@ -277,7 +277,7 @@ p {
 }
 
 .nav-logo a {
-    font-family: var(--font-heading);
+    /* font-family: var(--font-heading) !important; */
     font-size: 1.8rem;
     font-weight: 700;
     color: var(--accent-primary);

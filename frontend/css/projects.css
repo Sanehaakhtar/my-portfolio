@@ -1,19 +1,35 @@
-/* CS Projects Page - Ultra Modern Refined Design */
+/* In frontend/css/projects.css */
 
 :root {
-    --tech-primary: #00d4aa; /* Teal-Green */
-    --tech-secondary: #0ea5e9; /* Sky Blue */
-    --tech-accent: #f59e0b; /* Amber */
-    --tech-gradient: linear-gradient(135deg, var(--tech-primary) 0%, var(--tech-secondary) 50%, var(--tech-accent) 100%);
+    /* --- NEW PURPLE-THEMED TECH PALETTE --- */
     
-    --glass-bg: rgba(30, 41, 59, 0.8); /* Darker, more opaque glass */
-    --glass-border: rgba(0, 212, 170, 0.15);
-    --card-bg: rgba(30, 41, 59, 0.85); /* Slightly more opaque card background */
-    --card-border: rgba(0, 212, 170, 0.2);
+    /* Primary Colors: Deep purples and indigos, inspired by your index page */
+    --tech-primary: #8b5cf6;       /* A vibrant violet (from your index.css secondary) */
+    --tech-secondary: #6366f1;     /* A strong indigo (from your index.css primary) */
     
-    --shadow-light: 0 8px 32px rgba(0, 0, 0, 0.15);
-    --shadow-medium: 0 16px 48px rgba(0, 0, 0, 0.25);
-    --shadow-heavy: 0 24px 64px rgba(0, 212, 170, 0.15); /* More pronounced glow */
+    /* Accent Color: Keep the amber for a striking contrast */
+    --tech-accent: #f59e0b;        /* Amber */
+
+    /* Gradient: A smooth transition between the new primary and secondary colors */
+    --tech-gradient: linear-gradient(135deg, var(--tech-secondary) 0%, var(--tech-primary) 100%);
+
+    /* --- Glass & Card Backgrounds with a Purple Tint --- */
+    
+    /* Backgrounds inspired by the deep space feel of your tech theme */
+    --glass-bg: rgba(30, 41, 59, 0.6);  /* Dark slate blue glass, less purple to not overwhelm */
+    --glass-border: rgba(139, 92, 246, 0.2); /* Violet border for glass elements */
+
+    --card-bg: rgba(23, 10, 40, 0.80);  /* A very deep, rich purple for the card backgrounds */
+    --card-border: rgba(139, 92, 246, 0.25); /* A slightly stronger violet for card borders */
+    
+
+    /* --- Shadows & Glows with a Purple Hue --- */
+    
+    --shadow-light: 0 8px 32px rgba(0, 0, 0, 0.2);
+    --shadow-medium: 0 16px 48px rgba(0, 0, 0, 0.3);
+    --shadow-heavy: 0 24px 64px rgba(139, 92, 246, 0.2); /* A pronounced violet glow */
+
+    /* --- Unchanged Variables --- */
     
     --border-radius-sm: 16px;
     --border-radius-md: 24px;
@@ -379,7 +395,7 @@ body.projects-mode::after {
     border-radius: 50px;
     font-size: 0.75rem;
     font-weight: 600;
-    color: var(--tech-primary);
+    color: #f9f9f9;
     transition: all 0.3s ease;
     letter-spacing: 0.3px;
     text-transform: uppercase;
