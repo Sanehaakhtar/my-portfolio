@@ -1,0 +1,675 @@
+/* Contact Page - Next Level Ultra Modern Design */
+:root {
+    --contact-primary: #00f5ff;
+    --contact-secondary: #ff006e;
+    --contact-accent: #8338ec;
+    --contact-neon: #39ff14;
+    --contact-gradient: linear-gradient(135deg, #00f5ff 0%, #ff006e 35%, #8338ec 70%, #39ff14 100%);
+    --glass-bg: rgba(255, 255, 255, 0.02);
+    --glass-border: rgba(255, 255, 255, 0.06);
+    --glass-hover: rgba(255, 255, 255, 0.08);
+    --space-xs: 0.5rem;
+    --space-sm: 0.75rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+    --space-2xl: 3rem;
+    --space-3xl: 4rem;
+    --space-4xl: 6rem;
+    --font-display: 'Orbitron', 'Courier New', monospace;
+}
+
+/* Epic Futuristic Background */
+body.contact-mode {
+    background: 
+        conic-gradient(from 0deg at 25% 25%, #0a0a0a 0deg, #1a0033 90deg, #0a0a0a 180deg),
+        conic-gradient(from 180deg at 75% 75%, #16213e 0deg, #001a33 90deg, #330033 180deg, #16213e 270deg),
+        radial-gradient(ellipse at 50% 0%, rgba(0, 245, 255, 0.1) 0%, transparent 70%),
+        radial-gradient(ellipse at 0% 100%, rgba(255, 0, 110, 0.08) 0%, transparent 70%),
+        radial-gradient(ellipse at 100% 100%, rgba(131, 56, 236, 0.08) 0%, transparent 70%),
+        linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Advanced Neural Network Grid */
+body.contact-mode::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        repeating-linear-gradient(
+            0deg,
+            transparent 0px,
+            rgba(0, 245, 255, 0.02) 1px,
+            transparent 2px,
+            transparent 80px
+        ),
+        repeating-linear-gradient(
+            90deg,
+            transparent 0px,
+            rgba(0, 245, 255, 0.02) 1px,
+            transparent 2px,
+            transparent 80px
+        ),
+        repeating-linear-gradient(
+            45deg,
+            transparent 0px,
+            rgba(255, 0, 110, 0.01) 1px,
+            transparent 2px,
+            transparent 160px
+        );
+    animation: neuralGrid 25s linear infinite;
+    pointer-events: none;
+    z-index: -2;
+}
+
+/* Quantum Particles System */
+body.contact-mode::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(3px 3px at 40px 60px, rgba(0, 245, 255, 0.6), transparent),
+        radial-gradient(2px 2px at 120px 30px, rgba(255, 0, 110, 0.5), transparent),
+        radial-gradient(1px 1px at 200px 100px, rgba(131, 56, 236, 0.6), transparent),
+        radial-gradient(2px 2px at 300px 50px, rgba(57, 255, 20, 0.4), transparent),
+        radial-gradient(1px 1px at 80px 150px, rgba(0, 245, 255, 0.4), transparent),
+        radial-gradient(3px 3px at 250px 120px, rgba(255, 0, 110, 0.3), transparent);
+    background-size: 400px 300px, 350px 250px, 300px 400px, 450px 320px, 380px 280px, 320px 350px;
+    animation: quantumFloat 20s ease-in-out infinite;
+    pointer-events: none;
+    z-index: -1;
+}
+
+@keyframes neuralGrid {
+    0% { transform: translate(0, 0) rotate(0deg) scale(1); }
+    33% { transform: translate(40px, -20px) rotate(1deg) scale(1.05); }
+    66% { transform: translate(-20px, 40px) rotate(-0.5deg) scale(0.98); }
+    100% { transform: translate(80px, 80px) rotate(2deg) scale(1.02); }
+}
+
+@keyframes quantumFloat {
+    0%, 100% { 
+        transform: translateY(0px) rotate(0deg) scale(1);
+        opacity: 0.7;
+    }
+    25% { 
+        transform: translateY(-40px) rotate(90deg) scale(1.2);
+        opacity: 1;
+    }
+    50% { 
+        transform: translateY(20px) rotate(180deg) scale(0.8);
+        opacity: 0.5;
+    }
+    75% { 
+        transform: translateY(-20px) rotate(270deg) scale(1.1);
+        opacity: 0.9;
+    }
+}
+
+/* Main Container - Enhanced */
+.contact-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: var(--space-4xl) 5%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* Epic Page Header */
+.page-header {
+    margin-bottom: var(--space-4xl);
+    animation: holographicReveal 1.2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.page-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+    padding: var(--space-sm) var(--space-xl);
+    background: var(--glass-bg);
+    backdrop-filter: blur(25px);
+    border: 1px solid var(--glass-border);
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--contact-primary);
+    margin-bottom: var(--space-2xl);
+    box-shadow: 
+        0 10px 40px rgba(0, 245, 255, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1),
+        0 0 0 1px rgba(0, 245, 255, 0.1);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-badge::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(0, 245, 255, 0.3), transparent);
+    animation: scanline 3s infinite;
+}
+
+.page-badge:hover {
+    transform: translateY(-5px) scale(1.08);
+    box-shadow: 
+        0 20px 60px rgba(0, 245, 255, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2),
+        0 0 0 2px rgba(0, 245, 255, 0.3),
+        0 0 80px rgba(0, 245, 255, 0.4);
+    border-color: rgba(0, 245, 255, 0.4);
+}
+
+@keyframes scanline {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+/* Mind-Blowing Title */
+.contact-title {
+    font-family: var(--font-display);
+    font-size: clamp(4rem, 10vw, 8rem);
+    font-weight: 900;
+    background: var(--contact-gradient);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: prismaticShift 6s ease-in-out infinite;
+    margin-bottom: var(--space-lg);
+    line-height: 0.8;
+    text-transform: uppercase;
+    letter-spacing: -4px;
+    position: relative;
+    filter: drop-shadow(0 0 40px rgba(0, 245, 255, 0.5));
+}
+
+.contact-title::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent 40%, rgba(255, 255, 255, 0.1) 50%, transparent 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: hologramSweep 4s infinite;
+}
+
+.contact-subtitle {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.7;
+    letter-spacing: 0.8px;
+    text-shadow: 0 0 20px rgba(0, 245, 255, 0.2);
+}
+
+@keyframes prismaticShift {
+    0%, 100% { 
+        background-position: 0% 50%;
+        filter: drop-shadow(0 0 40px rgba(0, 245, 255, 0.5)) hue-rotate(0deg);
+    }
+    25% { 
+        background-position: 100% 0%;
+        filter: drop-shadow(0 0 40px rgba(255, 0, 110, 0.5)) hue-rotate(90deg);
+    }
+    50% { 
+        background-position: 100% 100%;
+        filter: drop-shadow(0 0 40px rgba(131, 56, 236, 0.5)) hue-rotate(180deg);
+    }
+    75% { 
+        background-position: 0% 100%;
+        filter: drop-shadow(0 0 40px rgba(57, 255, 20, 0.5)) hue-rotate(270deg);
+    }
+}
+
+@keyframes hologramSweep {
+    0% { transform: translateX(-100%) skewX(-15deg); }
+    100% { transform: translateX(200%) skewX(-15deg); }
+}
+
+/* Revolutionary Contact Grid */
+.contact-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--space-2xl);
+    margin-top: var(--space-4xl);
+    perspective: 1000px;
+}
+
+/* Next-Gen Contact Cards */
+.contact-card {
+    padding: var(--space-3xl);
+    background: var(--glass-bg);
+    backdrop-filter: blur(35px);
+    border: 1px solid var(--glass-border);
+    border-radius: 32px;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 
+        0 25px 80px rgba(0, 0, 0, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1),
+        0 0 0 1px rgba(0, 245, 255, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    animation: cardMaterialize 1s cubic-bezier(0.23, 1, 0.32, 1) both;
+    transform-style: preserve-3d;
+}
+
+.contact-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--contact-gradient);
+    opacity: 0;
+    transition: opacity 0.8s ease;
+    border-radius: 32px;
+}
+
+.contact-card::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    background: radial-gradient(circle at center, rgba(10, 10, 10, 0.98) 0%, rgba(26, 26, 46, 0.95) 100%);
+    border-radius: 30px;
+    z-index: -1;
+}
+
+.contact-card:hover::before {
+    opacity: 0.08;
+    animation: energyPulse 2s infinite;
+}
+
+.contact-card:hover {
+    transform: translateY(-20px) scale(1.05) rotateX(10deg) rotateY(5deg);
+    border-color: rgba(0, 245, 255, 0.4);
+    box-shadow: 
+        0 50px 120px rgba(0, 0, 0, 0.5),
+        0 0 100px rgba(0, 245, 255, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2),
+        0 0 0 2px rgba(0, 245, 255, 0.3);
+}
+
+@keyframes energyPulse {
+    0%, 100% { opacity: 0.08; }
+    50% { opacity: 0.15; }
+}
+
+/* Spectacular Contact Icons */
+.contact-icon {
+    font-size: 4.5rem;
+    background: var(--contact-gradient);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: var(--space-xl);
+    animation: prismaticShift 6s ease-in-out infinite;
+    position: relative;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    filter: drop-shadow(0 0 30px rgba(0, 245, 255, 0.6));
+}
+
+.contact-icon::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle, rgba(0, 245, 255, 0.2) 0%, transparent 70%);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    animation: iconGlow 3s ease-in-out infinite;
+}
+
+.contact-card:hover .contact-icon {
+    transform: scale(1.3) rotateY(15deg);
+    filter: drop-shadow(0 0 50px rgba(0, 245, 255, 0.8));
+}
+
+.contact-card:hover .contact-icon::before {
+    opacity: 1;
+}
+
+@keyframes iconGlow {
+    0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.3; }
+    50% { transform: translate(-50%, -50%) scale(1.2); opacity: 0.8; }
+}
+
+/* Epic Card Titles */
+.contact-card h3 {
+    font-family: var(--font-display);
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: white;
+    margin-top: 0;
+    margin-bottom: var(--space-md);
+    text-shadow: 
+        0 0 30px rgba(0, 245, 255, 0.5),
+        0 0 60px rgba(0, 245, 255, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    transition: all 0.4s ease;
+}
+
+.contact-card:hover h3 {
+    color: var(--contact-primary);
+    text-shadow: 
+        0 0 40px rgba(0, 245, 255, 0.8),
+        0 0 80px rgba(0, 245, 255, 0.4);
+    transform: scale(1.1);
+}
+
+/* Enhanced Card Description */
+.contact-card p {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1.7;
+    margin-bottom: var(--space-2xl);
+    flex-grow: 1;
+    letter-spacing: 0.5px;
+    transition: color 0.4s ease;
+}
+
+.contact-card:hover p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Mind-Bending Contact Buttons */
+.contact-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+    padding: var(--space-lg) var(--space-2xl);
+    background: var(--contact-gradient);
+    background-size: 400% 400%;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    border: none;
+    cursor: pointer;
+    box-shadow: 
+        0 15px 40px rgba(0, 245, 255, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2),
+        0 0 0 1px rgba(0, 245, 255, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    position: relative;
+    overflow: hidden;
+    animation: prismaticShift 6s ease-in-out infinite;
+}
+
+.contact-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.8s ease;
+}
+
+.contact-link:hover::before {
+    left: 100%;
+}
+
+.contact-link:hover {
+    transform: translateY(-8px) scale(1.1) rotateX(10deg);
+    box-shadow: 
+        0 30px 80px rgba(0, 245, 255, 0.5),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3),
+        0 0 0 2px rgba(0, 245, 255, 0.4),
+        0 0 100px rgba(0, 245, 255, 0.6);
+}
+
+/* Responsive Excellence */
+@media (max-width: 768px) {
+    .contact-container {
+        padding: var(--space-2xl) 5%;
+    }
+    
+    .contact-options {
+        grid-template-columns: 1fr;
+        gap: var(--space-xl);
+    }
+    
+    .contact-card {
+        padding: var(--space-2xl);
+        border-radius: 24px;
+    }
+    
+    .contact-card:hover {
+        transform: translateY(-10px) scale(1.02);
+    }
+    
+    .contact-icon {
+        font-size: 3.8rem;
+    }
+    
+    .contact-card h3 {
+        font-size: 1.8rem;
+    }
+    
+    .contact-link {
+        padding: var(--space-md) var(--space-xl);
+    }
+    
+    .contact-title {
+        font-size: 3rem;
+        letter-spacing: -2px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-title {
+        font-size: 2.5rem;
+        letter-spacing: -1px;
+    }
+    
+    .contact-card {
+        padding: var(--space-xl);
+    }
+    
+    .contact-icon {
+        font-size: 3.2rem;
+    }
+}
+
+/* Epic Animation Keyframes */
+@keyframes holographicReveal {
+    0% {
+        opacity: 0;
+        transform: translateY(80px) rotateX(-20deg);
+        filter: blur(10px);
+    }
+    50% {
+        opacity: 0.7;
+        transform: translateY(20px) rotateX(-5deg);
+        filter: blur(2px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) rotateX(0deg);
+        filter: blur(0px);
+    }
+}
+
+@keyframes cardMaterialize {
+    0% {
+        opacity: 0;
+        transform: translateY(100px) rotateX(-30deg) scale(0.8);
+        filter: blur(15px);
+    }
+    50% {
+        opacity: 0.6;
+        transform: translateY(30px) rotateX(-10deg) scale(0.95);
+        filter: blur(5px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) rotateX(0deg) scale(1);
+        filter: blur(0px);
+    }
+}
+
+/* Staggered Epic Animations */
+.contact-card:nth-child(1) { animation-delay: 0.1s; }
+.contact-card:nth-child(2) { animation-delay: 0.3s; }
+.contact-card:nth-child(3) { animation-delay: 0.5s; }
+.contact-card:nth-child(4) { animation-delay: 0.7s; }
+
+/* Accessibility & Performance */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Enhanced Focus States */
+.contact-link:focus-visible {
+    outline: 3px solid var(--contact-primary);
+    outline-offset: 6px;
+    box-shadow: 
+        0 30px 80px rgba(0, 245, 255, 0.5),
+        0 0 0 6px rgba(0, 245, 255, 0.3);
+}
+
+.contact-card:focus-within {
+    transform: translateY(-10px) scale(1.02);
+    border-color: rgba(0, 245, 255, 0.4);
+}
+
+/* Loading State for Contact Page */
+.contact-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-xl);
+    padding: var(--space-4xl);
+    margin: var(--space-3xl) auto;
+    width: 400px;
+    height: 400px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(30px);
+    border: 1px solid var(--glass-border);
+    border-radius: 200px; /* Perfect circle */
+    text-align: center;
+    box-shadow: 
+        0 30px 80px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1),
+        0 0 0 1px rgba(0, 245, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-loading::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: var(--contact-gradient);
+    border-radius: 200px;
+    z-index: -1;
+    animation: rotate 3s linear infinite;
+}
+
+.contact-loading::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    background: 
+        radial-gradient(circle at 20% 20%, #1a0033 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, #001a33 0%, transparent 50%),
+        linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    border-radius: 200px;
+    z-index: -1;
+}
+
+.contact-loading > * {
+    position: relative;
+    z-index: 1;
+}
+
+.loading-spinner {
+    width: 60px;
+    height: 60px;
+    border: 3px solid transparent;
+    border-top: 3px solid var(--contact-primary);
+    border-right: 3px solid var(--contact-secondary);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    box-shadow: 0 0 30px rgba(0, 245, 255, 0.5);
+}
+
+.loading-text {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 20px rgba(0, 245, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+    .contact-loading {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-loading {
+        width: 250px;
+        height: 250px;
+    }
+}
